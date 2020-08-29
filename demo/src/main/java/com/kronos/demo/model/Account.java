@@ -1,6 +1,7 @@
 package com.kronos.demo.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Account {
     private long id;
@@ -8,8 +9,6 @@ public class Account {
     private String name;
 
     private boolean gender;
-
-    private int credit;
 
     private int mobile;
 
@@ -22,6 +21,10 @@ public class Account {
     private AccountStatus status;
 
     private boolean admin;
+
+    private List<Passenger> passengers;
+
+    private List<Bill> bills;
 
     private Date gmtCreated;
 
@@ -49,14 +52,6 @@ public class Account {
 
     public void setGender(boolean gender) {
         this.gender = gender;
-    }
-
-    public int getCredit() {
-        return credit;
-    }
-
-    public void setCredit(int credit) {
-        this.credit = credit;
     }
 
     public int getMobile() {
@@ -99,7 +94,7 @@ public class Account {
         this.status = status;
     }
 
-    public boolean isAdmin() {
+    public boolean getAdmin() {
         return admin;
     }
 
@@ -121,5 +116,21 @@ public class Account {
 
     public void setGmtModified(Date gmtModified) {
         this.gmtModified = gmtModified;
+    }
+
+    public List<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public void setPassengers(List<Passenger> passengers) {
+        this.passengers = passengers;
+    }
+
+    public List<Bill> getBills() {
+        return bills;
+    }
+
+    public void setBills(List<Bill> bills) {
+        this.bills = bills;
     }
 }

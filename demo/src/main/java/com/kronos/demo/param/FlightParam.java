@@ -9,6 +9,10 @@ public class FlightParam {
 
     private Date arrive;
 
+    private String departure;
+
+    private String destination;
+
     public String getFlightId() {
         return flightId;
     }
@@ -31,5 +35,21 @@ public class FlightParam {
 
     public void setArrive(Date arrive) {
         this.arrive = arrive;
+    }
+
+    public String getDeparture() {
+        return departure;
+    }
+
+    public void setDeparture(String departure) {
+        this.departure = departure;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 }

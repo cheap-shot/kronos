@@ -13,7 +13,7 @@ public class Seat {
 
     private int price;
 
-    private boolean occupied;
+    private Passenger passenger;
 
     private Date gmtCreated;
 
@@ -59,12 +59,12 @@ public class Seat {
         this.price = price;
     }
 
-    public boolean isOccupied() {
-        return occupied;
+    public Passenger getPassenger() {
+        return passenger;
     }
 
-    public void setOccupied(boolean occupied) {
-        this.occupied = occupied;
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
     }
 
     public Date getGmtCreated() {
